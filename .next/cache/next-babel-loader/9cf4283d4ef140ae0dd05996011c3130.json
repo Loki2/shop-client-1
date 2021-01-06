@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport BankAccount from '../../components/Banks';\nimport Sidebar from '../../components/Sidebar';\n\nvar BankPage = function BankPage() {\n  return __jsx(\"div\", null, __jsx(Sidebar, null), __jsx(BankAccount, null));\n};\n\nexport default BankPage;","map":null,"metadata":{},"sourceType":"module"}

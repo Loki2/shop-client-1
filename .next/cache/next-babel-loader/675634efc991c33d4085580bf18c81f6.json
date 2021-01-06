@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport Category from '../../components/Categories';\nimport Sidebar from '../../components/Sidebar';\n\nconst CategoryPage = () => {\n  return __jsx(\"div\", null, __jsx(Sidebar, null), __jsx(Category, null));\n};\n\nexport default CategoryPage;","map":null,"metadata":{},"sourceType":"module"}

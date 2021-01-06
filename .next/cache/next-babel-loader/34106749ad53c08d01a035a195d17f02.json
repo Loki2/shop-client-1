@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport Sidebar from '../../components/Sidebar';\n\nvar DeliveryPage = function DeliveryPage() {\n  return __jsx(\"div\", null, __jsx(Sidebar, null), __jsx(\"h1\", null, \"i am from Delivery Page\"));\n};\n\nexport default DeliveryPage;","map":null,"metadata":{},"sourceType":"module"}

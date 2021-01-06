@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport Sidebar from '../../components/Sidebar';\nimport UserCart from '../../components/UserCarts';\n\nvar Cart = function Cart() {\n  return __jsx(\"div\", null, __jsx(Sidebar, null), __jsx(UserCart, null));\n};\n\nexport default Cart;","map":null,"metadata":{},"sourceType":"module"}

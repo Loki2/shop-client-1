@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\n\nvar CreateProfile = function CreateProfile() {\n  return __jsx(\"div\", {\n    className: \"create_profile_page\"\n  }, __jsx(\"h2\", null, \"Create profile Page Component\"));\n};\n\nexport default CreateProfile;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport Brand from '../../components/Brand';\nimport Sidebar from '../../components/Sidebar';\n\nconst BrandPage = () => {\n  return __jsx(\"div\", null, __jsx(Sidebar, null), __jsx(Brand, null));\n};\n\nexport default BrandPage;","map":null,"metadata":{},"sourceType":"module"}
