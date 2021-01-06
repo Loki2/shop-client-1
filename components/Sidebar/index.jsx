@@ -42,7 +42,7 @@ const Sidebar = () => {
                 <div className="sidebar-menu">
                     <ul>
                         <li>
-                            <Link href="/dashboard">
+                            <Link href="/Dashboard">
                                 <a >
                                     <span className="ti-home"></span>
                                     <span>ຫນ້າຫລັກ</span>
@@ -50,7 +50,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/userCustOrder">
+                            <Link href="/Custorder">
                                 <a >
                                     <span className="ti-view-list"></span>
                                     <span>ລາຍການສັ່ງຊື້ລູກຄ້າ</span>
@@ -58,7 +58,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/userProducts">
+                            <Link href="/Myproducts">
                                 <a >
                                     <span className="ti-server"></span>
                                     <span>ສິນຄ້າໃນສ່າງ</span>
@@ -66,7 +66,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/categories">
+                            <Link href="/Categories">
                                 <a >
                                     <span className="ti-clipboard"></span>
                                     <span>ປະເພດສິນຄ້າ</span>
@@ -74,7 +74,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/brands">
+                            <Link href="/Brands">
                                 <a>
                                     <span className="ti-folder"></span>
                                     <span>ແບຣນສິນຄ້າ</span>
@@ -90,7 +90,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/userBank">
+                            <Link href="/Bank">
                                 <a >
                                     <span className="ti-wallet"></span>
                                     <span>ຂໍ້ມູນການຊຳລະ</span>
@@ -98,7 +98,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/userSaleOut">
+                            <Link href="/Sale">
                                 <a >
                                     <span className="ti-stats-up"></span>
                                     <span>ຂໍ້ມູນການຂ່າຍອອກສິນຄ້າ</span>
@@ -106,7 +106,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/userProfile">
+                            <Link href="/Profile">
                                 <a >
                                     <span className="ti-settings"></span>
                                     <span>ຂໍ້ມູນຜູ້ໃຊ້</span>

@@ -107,10 +107,10 @@ const CheckOut = () => {
                                     <div className="summary-checkout-single">
                                         <h3>2. Credit Card No</h3>
 
-                                        <CheckoutStripe />
+                                        {/* <CheckoutStripe />
                                         <CheckoutWithCreditCard carts={data.user.carts} />
                                         <CheckoutWithInternetbanking carts={data.user.carts} />
-                                        <ReactCheckout />
+                                        <ReactCheckout /> */}
                                         {/* <form action="" method="post">
                                             <div className="credit-info">
                                                 <label htmlFor="card_name">Card Name:</label><br />

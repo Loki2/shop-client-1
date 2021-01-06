@@ -23,7 +23,7 @@ import '@quasar/extras/ionicons-v4/ionicons-v4.css';
 //   )
 // }
 
-function MyApp({ Component, pageProps, apollo, user }) {
+function App({ Component, pageProps, apollo, user }) {
       return (
             <ApolloProvider client={apollo}>
                   <AuthProvider userData={user}>
@@ -35,7 +35,9 @@ function MyApp({ Component, pageProps, apollo, user }) {
       );
 }
 
-MyApp.getInitialProps = async ({ ctx, router }) => {
+
+
+App.getInitialProps =  async ({ ctx, router }) => {
       // calls page's `getInitialProps` and fills `appProps.pageProps`
       if (process.browser) {
             return __NEXT_DATA__.props.pageProps;
@@ -49,16 +51,16 @@ MyApp.getInitialProps = async ({ ctx, router }) => {
 
       if (!token) {
             if (
-                    router.pathname === "/dashboard" ||
-                    router.pathname === "/userCart" ||
-                    router.pathname === "/userBrands" ||
-                    router.pathname === "/userCategories" ||
-                    router.pathname === "/userProducts" ||
-                    router.pathname === "/userProducts/createProduct" ||
-                    router.pathname === "/userProfile" ||
-                    router.pathname === "/userCustOrder" ||
-                    router.pathname === "/checkOut" ||
-                    router.pathname === "/userBank"
+                    router.pathname === "/Dashboard" ||
+                    router.pathname === "/Cart" ||
+                    router.pathname === "/Brands" ||
+                    router.pathname === "/Categories" ||
+                    router.pathname === "/Myproducts" ||
+                    router.pathname === "/Myproducts/createProduct" ||
+                    router.pathname === "/Profile" ||
+                    router.pathname === "/Custorder" ||
+                    router.pathname === "/Checkout" ||
+                    router.pathname === "/Bank"
             ) {
                   //Use OR To Protected more Routers
                   ctx.res.writeHead(302, { Location: "/signin" }); //302 Redirect Route code
@@ -92,4 +94,4 @@ MyApp.getInitialProps = async ({ ctx, router }) => {
       console.log(ctx.req.headers)
 };
 
-export default apolloClient(MyApp);
+export default apolloClient(App);

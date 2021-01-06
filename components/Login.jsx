@@ -32,7 +32,7 @@ const Login = () => {
                     email: "",
                     password: ""
                 })
-                Router.push('/dashboard')
+                Router.push('/Dashboard')
             }
         }
     })

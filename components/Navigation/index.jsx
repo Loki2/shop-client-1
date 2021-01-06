@@ -14,15 +14,15 @@ const navLink = [
     },
     {
         title: 'PRODUCTS',
-        path:'/products'
+        path:'/Products'
     },
     {
         title: 'CARTS',
-        path:'/userCart'
+        path:'/Cart'
     },
     {
         title: 'SIGNIN',
-        path:'/signin'
+        path:'/Signin'
     },
     {
         title: 'SIGNUP',
@@ -37,15 +37,15 @@ const UserAdmin =  [
     },
     {
         title: 'PRODUCTS',
-        path:'/products'
+        path:'/Products'
     },
     {
         title: 'CARTS',
-        path:'/userCart'
+        path:'/Cart'
     },
     {
         title: 'DASHBOARD',
-        path:'/dashboard'
+        path:'/Dashboard'
     },
     {
         title: 'SIGNOUT',

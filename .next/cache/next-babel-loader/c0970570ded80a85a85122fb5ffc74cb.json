@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport CheckOut from '../../components/Checkout';\n\nconst CheckOutPage = () => {\n  return __jsx(\"div\", {\n    className: \"checkout-page\"\n  }, __jsx(CheckOut, null));\n};\n\nexport default CheckOutPage;","map":null,"metadata":{},"sourceType":"module"}
