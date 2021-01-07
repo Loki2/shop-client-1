@@ -1,24 +1,7 @@
 {
-  "/About": "pages/About.js",
-  "/Bank": "pages/Bank.js",
-  "/Brands": "pages/Brands.js",
-  "/Cart": "pages/Cart.js",
-  "/Categories": "pages/Categories.js",
-  "/Checkout": "pages/Checkout.js",
-  "/Custorder": "pages/Custorder.js",
-  "/Dashboard": "pages/Dashboard.js",
-  "/Myproducts": "pages/Myproducts.js",
-  "/Products/[productId]": "pages/Products/[productId].js",
-  "/Products": "pages/Products.js",
-  "/Profile": "pages/Profile.js",
-  "/Sale": "pages/Sale.js",
-  "/Signin/facebook": "pages/Signin/facebook.js",
-  "/Signin": "pages/Signin.js",
-  "/Signin/requestresetpassword": "pages/Signin/requestresetpassword.js",
-  "/Signin/resetpassword": "pages/Signin/resetpassword.js",
   "/_app": "pages/_app.js",
-  "/": "pages/index.js",
-  "/signup": "pages/signup.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/Signin": "pages/Signin.js",
+  "/Dashboard": "pages/Dashboard.js"
 }
