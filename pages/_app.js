@@ -70,7 +70,7 @@ App.getInitialProps =  async ({ ctx, router }) => {
             return null;
       }
       //"http://localhost:5000/graphql"
-      const response = await fetch("http://54.255.10.30/graphql", {
+      const response = await fetch("http://localhost:5000/graphql", {
             method: "post",
             headers: {
                   "Content-type": "application/json",
