@@ -63,14 +63,14 @@ App.getInitialProps =  async ({ ctx, router }) => {
                     router.pathname === "/Bank"
             ) {
                   //Use OR To Protected more Routers
-                  ctx.res.writeHead(302, { Location: "/signin" }); //302 Redirect Route code
+                  ctx.res.writeHead(302, { Location: "/Signin" }); //302 Redirect Route code
                   ctx.res.end();
             }
             //Add More Protected route here
             return null;
       }
       //"http://localhost:5000/graphql"
-      const response = await fetch("http://localhost:5000/graphql", {
+      const response = await fetch("http://54.255.10.30/graphql", {
             method: "post",
             headers: {
                   "Content-type": "application/json",
@@ -85,7 +85,7 @@ App.getInitialProps =  async ({ ctx, router }) => {
             //console.log('User Info -->',  result)
       } else {
             if(router.pathname === "/carts") {
-              ctx.res.writeHead(302, {Location: '/signin'}) //302 Redirect Route code
+              ctx.res.writeHead(302, {Location: '/Signin'}) //302 Redirect Route code
               ctx.res.end()
             }
             //Add More Protected route here
