@@ -11,7 +11,6 @@ export const MY_PRODUCTS = gql`
                         name
                         description
                         price
-                        stockqty
                         imageUrl
                   }
             }
@@ -25,7 +24,6 @@ export const QUERY_PRODUCTS = gql`
                   name
                   description
                   price
-                  stockqty
                   imageUrl
                   createdAt
                   user {
