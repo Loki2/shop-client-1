@@ -45,8 +45,9 @@ const CheckOutList = ({ carts }) => {
                                 <th>VAT 10%:</th>
                                 <th>$
                                 {
-                                   carts.length > 0 &&
-                                    carts.reduce((sum, cart) => sum + cart.qualtity * cart.product.price *10/100, 0)}
+                                    carts.length > 0 &&
+                                    carts.reduce((sum, cart) => sum + cart.qualtity * cart.product.price *10/100, 0)
+                                }
                                 </th>
                             </tr>
                             <tr>
@@ -61,8 +62,9 @@ const CheckOutList = ({ carts }) => {
                                 <th>Total Charge:</th>
                                 <th>$
                                 {
-                                   carts.length > 0 &&
-                                    carts.reduce((sum, cart) => (sum + cart.qualtity * cart.product.price) + sum * 10/100, 0)}
+                                    carts.length > 0 &&
+                                    carts.reduce((sum, cart) => (sum + cart.qualtity * cart.product.price) + sum * 10/100, 0)
+                                }
                                 </th>
                             </tr>
                         </tfoot>

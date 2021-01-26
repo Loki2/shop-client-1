@@ -8,7 +8,7 @@ module.exports = {
             includePaths: [path.join(__dirname, "styles")],
       },
       env: {
-            OMISE_OUBLIC_KEY: process.env.OMISE_OUBLIC_KEY,
+            OMISE_PUBLIC_KEY: process.env.OMISE_PUBLIC_KEY,
             STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY,
       },
 

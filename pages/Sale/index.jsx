@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Sidebar from '../../components/Sidebar';
+import Header from '../../components/Partials/Header';
+import Sidebar from '../../components/Partials/Sidebar';
 
 
 const UserSale = () => {

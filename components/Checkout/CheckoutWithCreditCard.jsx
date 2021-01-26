@@ -1,14 +1,16 @@
 import React from 'react';
 import Script from 'react-load-script'
 
+
 let OmiseCard;
 
 
+// console.log("OMISE KEY:", process.env.OMISE_PUBLIC_KEY)
+const CheckoutWithCreditCard = (amount, creditCardCheckout) => {
+        // const amount = carts.reduce((sum, cart) => sum + cart.qualtity * cart.product.price, 0)
+        //console.log("Total:", amount)
 
-
-const CheckoutWithCreditCard = ({carts}) => {
-        const amount = carts.reduce((sum, cart) => sum + cart.qualtity * cart.product.price, 0)
-        console.log(process.env.OMISE_PUBLIC_KEY)
+        
         const  handleLoadScript = () => {
             OmiseCard = window.OmiseCard
             OmiseCard.configure({
@@ -34,10 +36,11 @@ const CheckoutWithCreditCard = ({carts}) => {
         //const { cart, user, createCreditCardcharge } = props;
         OmiseCard.open({
             frameScription: 'Invoice #8723',
-            amount: amount * 100,
+            amount,
             onCreateTokensuccess: token => {
-                console.log(token)
+                console.log("Token", token)
                 //createCreditCardcharge(user.email, user.username, cart.amount, token)
+                creditCardCheckout(amount, null, token)
             },
             onFormClosed: () => {}
         })
@@ -56,10 +59,10 @@ const CheckoutWithCreditCard = ({carts}) => {
                     id="credit-card"
                     className="btn-payment__omise"
                     type="button"
-                    disabled={!amount}
+                     disabled={!amount}
                     onClick={handleClick}
                 >
-                    Pay Now! With Omise
+                    Pay Now! With New Credit Card
                 </button>
             </form>
         </div>

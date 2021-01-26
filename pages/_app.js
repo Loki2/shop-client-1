@@ -7,7 +7,6 @@ import apolloClient from "../apollo/apolloClient";
 import cookie from "cookie";
 import { QUERY_USER } from "../graphql/User";
 import "../styles/global.scss";
-import "antd/dist/antd.css";
 import '@quasar/extras/ionicons-v4/ionicons-v4.css';
 
 
@@ -51,8 +50,9 @@ App.getInitialProps =  async ({ ctx, router }) => {
 
       if (!token) {
             if (
-                    router.pathname === "/Dashboard" ||
-                    router.pathname === "/Cart" ||
+                    router.pathname === "/admin" ||
+                    router.pathname === "/admin/products"||
+                    router.pathname === "/Carts" ||
                     router.pathname === "/Brands" ||
                     router.pathname === "/Categories" ||
                     router.pathname === "/Myproducts" ||
@@ -70,7 +70,7 @@ App.getInitialProps =  async ({ ctx, router }) => {
             return null;
       }
       //"http://localhost:5000/graphql"
-      const response = await fetch("http://54.255.10.30/graphql", {
+      const response = await fetch("http://localhost:5000/graphql", {
             method: "post",
             headers: {
                   "Content-type": "application/json",
@@ -84,7 +84,7 @@ App.getInitialProps =  async ({ ctx, router }) => {
             return { user: result.data.user };
             //console.log('User Info -->',  result)
       } else {
-            if(router.pathname === "/carts") {
+            if(router.pathname === "/Carts") {
               ctx.res.writeHead(302, {Location: '/Signin'}) //302 Redirect Route code
               ctx.res.end()
             }

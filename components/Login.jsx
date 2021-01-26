@@ -32,7 +32,7 @@ const Login = () => {
                     email: "",
                     password: ""
                 })
-                Router.push('/Dashboard')
+                Router.push('/')
             }
         }
     })
@@ -68,7 +68,7 @@ const Login = () => {
                     onChange={handleChange}
                 />
                 <div className="p-forget">
-                    <p>Forgot password?{" "} <span onClick={() => Router.push('/signin/requestresetpassword')}>Click here</span></p>
+                    <p>Forgot password?{" "} <span onClick={() => Router.push('/Signin/requestresetpassword')}>Click here</span></p>
                 </div>
                 <button className="btn-submit" type='submit' disabled={loading}>Login Now!</button>
                 <Link href="/signup">

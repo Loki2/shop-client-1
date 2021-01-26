@@ -44,3 +44,19 @@ export const  DELETE_CART = gql`
         }
     }
 `
+
+export const CREATE_ORDER = gql`
+    mutation CREATE_ORDER($amount: Float!, $cardId: String, $token: String){
+    createOrder(amount: $amount, cardId: $cardId, token: $token){
+        id
+        items{
+        id
+        product{
+            name
+            price
+        }
+        qualtity
+        }
+    }
+    }
+`

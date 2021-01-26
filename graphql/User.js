@@ -25,14 +25,27 @@ export const QUERY_USER = gql`
                         }
                         qualtity
                   }
-                  profile {
+                  orders {
                         id
-                        firstname
-                        lastname
-                        age
-                        birthdate
-                        mentalStatus
-                        profileImage
+                        items {
+                              product {
+                                    name
+                                    description
+                                    price
+                                    imageUrl
+                              }
+                              qualtity
+                        }
+                  }
+                  cards {
+                        id
+                        cardInfo {
+                              id
+                              expiration_month
+                              expiration_year
+                              brand
+                              last_digits
+                        }
                   }
             }
       }
@@ -76,8 +89,30 @@ export const LOG_IN = gql`
                               }
                               qualtity
                         }
+                        orders {
+                              id
+                              items {
+                                    product {
+                                          name
+                                          description
+                                          price
+                                          imageUrl
+                                    }
+                                    qualtity
+                              }
+                        }
+                        cards {
+                              id
+                              cardInfo {
+                                    id
+                                    expiration_month
+                                    expiration_year
+                                    brand
+                                    last_digits
+                              }
+                        }
                   }
-                 jwt
+                  jwt
             }
       }
 `;

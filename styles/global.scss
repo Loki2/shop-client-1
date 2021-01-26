@@ -2,32 +2,31 @@
 @import url("../assets/themify-icons/css/themify-icons.css");
 @import "./_variables.scss";
 @import "./login.scss";
-@import "./product_detail.scss";
-@import "./products.scss";
 @import "./requestResetPassword.scss";
-@import "./sidebar.scss";
 @import "./signup.scss";
-@import "./banner.scss";
-@import "./home.scss";
 @import "./navigation";
 @import "./modal.scss";
 @import "./backdrop";
 
 // User Admin Style
-@import "./dashboard";
 @import "./header";
-@import "./userbrands";
-@import "./userProducts";
-@import "./user_create_product";
-@import "./userCategories";
-@import "./userProfile";
-@import "./userCustOrder";
-@import "./userSaleOut";
-@import "./userBank";
-@import "./userCart";
+// @import "./userbrands";
+// @import "./userProducts";
+// @import "./user_create_product";
+// @import "./userCategories";
+// @import "./userProfile";
+// @import "./userCustOrder";
+// @import "./userSaleOut";
+// @import "./userBank";
+// @import "./userCart";
 @import "./userCheckout";
+@import "./admin/styles";
 
-
+//Home Style
+@import "./home/styles.scss";
+@import"./home/products";
+@import "./home/product_detail";
+@import"./home/cart";
 
 * {
     font-family: 'Poppins', sans-serif;

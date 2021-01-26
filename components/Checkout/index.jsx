@@ -1,26 +1,49 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
+import { AuthContext } from '../../contexts/AuthProvider';
+import { QUERY_USER } from '../../graphql/User';
+import { CREATE_ORDER } from '../../graphql/Carts';
 import CheckOutList from './CheckOutList';
 import CheckoutWithCreditCard from './CheckoutWithCreditCard';
+import { useQuery, useMutation } from '@apollo/react-hooks';
+// import CheckoutStripe from './CheckoutStripe';
+// import CheckoutWithInternetbanking from './CheckoutInternetBanking';
+// import ReactCheckout from './ReactCheckout';
 
-import { useQuery } from '@apollo/react-hooks';
-import { MY_CARTS } from '../../graphql/Carts';
-import CheckoutStripe from './CheckoutStripe';
-import CheckoutWithInternetbanking from './CheckoutInternetBanking';
-import ReactCheckout from './ReactCheckout';
+//Function Calculate Amount
+const calculateAmount = carts =>{
+    const amount =  carts.reduce(
+        (sum, cart) => sum + cart.qualtity * cart.product.price, 0
+    ) 
+    return amount * 100;
+}
 
 const CheckOut = () => {
-    const { data, loading, error } = useQuery(MY_CARTS) //
-    // console.log("User Cart:", data)
+
+    const { user } = useContext(AuthContext);
+    const { data, loading, error } = useQuery(QUERY_USER);
+
+    // console.log(user)
+
+    const [createOrder ] = useMutation(CREATE_ORDER, {refetchQueries: [{query: QUERY_USER}]})
+
+
+    const creditCardCheckout = async (amount, cardId, token) => {
+        const result = await createOrder({ variables: { amount, cardId, token}})
+        console.log("Result -->", result)
+        //i am stay with here 41.43mns
+    }
+
+    
+    // console.log("Checkout User", user)
     if (error) return <p>Ooops....! Something went wrong, Plz Login try again later</p>
     if (loading) return <p>Empty Cart Loading...</p>
 
     return (
-        <>
            <div className="checkout-content">
                 <main>
                     <section className="recent-checkout">
                         <div className="checkout-grid">
-                            <CheckOutList carts={data.user.carts} />
+                            <CheckOutList carts={user.carts} />
                             <div className="checkout-card">
                                 <h3 className="bill-title">Billing Information:</h3>
                                 <div className="checkout-card-item">
@@ -99,7 +122,7 @@ const CheckOut = () => {
                                             </div>
                                             <div className="submit-state">
                                                 <button className="btn__cancel" type="">Back Cart</button>
-                                                <button  className="btn__submit" type="submit" >Check Out</button>
+                                                <button  className="btn__submit" type="submit" >Submit!</button>
                                             </div>
                                         </form>
                                     </div>
@@ -107,40 +130,44 @@ const CheckOut = () => {
                                     <div className="summary-checkout-single">
                                         <h3>2. Credit Card No</h3>
 
-                                        {/* <CheckoutStripe />
-                                        <CheckoutWithCreditCard carts={data.user.carts} />
-                                        <CheckoutWithInternetbanking carts={data.user.carts} />
-                                        <ReactCheckout /> */}
-                                        {/* <form action="" method="post">
-                                            <div className="credit-info">
-                                                <label htmlFor="card_name">Card Name:</label><br />
-                                                <input type="text" name="card_name" placeholder="Card Name" />
-                                                <label htmlFor="card_no">Card No:</label>
-                                                <input type="text" name="card_no" placeholder="Card No." />
-                                            </div><hr/>
-                                            <div className="credit-state">
-                                                <div>
-                                                    <label htmlFor="state">CVV No</label><br />
-                                                    <input type="text" name="cvv" placeholder="CVV" />
-                                                </div>
-                                                <div>
-                                                    <label htmlFor="zip">Exp Month</label>
-                                                    <input type="text" name="month" placeholder="Month" />
-                                                </div>
-                                                <div>
-                                                    <label htmlFor="zip">Exp Year</label>
-                                                    <input type="text" name="year" placeholder="Year" />
-                                                </div>
-                                            </div>
-                                        </form> */}
+                                        {/* <CheckoutStripe /> */}
+                                        <CheckoutWithCreditCard 
+                                            amount={calculateAmount(user.carts)}
+                                            // carts={data.user.carts} 
+                                            creditCardCheckout={creditCardCheckout} 
+                                            />
+                                        {/* <CheckoutWithInternetbanking carts={data.user.carts} /> */}
+                                        {/* <ReactCheckout /> */}
+                                           {
+                                               user &&
+                                               user.cards &&
+                                               user.cards.map(card => (
+                                                <form action=""  key={card.id}>
+                                                    <div className="credit__header">
+                                                        <h2>I already have card?</h2>
+                                                    </div>
+                                                    <div className="credit-info" >
+                                                        <label htmlFor="card_name">Card Brand:</label><br />
+                                                        <input type="text" name="card_name" placeholder={card.cardInfo.brand} disabled/>
+                                                        <label htmlFor="card_no">Card No:</label>
+                                                        <input type="text" name="card_no" placeholder={`****-****-****-${card.cardInfo.last_digits}`} disabled />
+                                                        <p>Expire: {card.cardInfo.expiration_month}/{card.cardInfo.expiration_year}</p>
+                                                        <a type="button"  className="btn__submit" onClick={() => {
+                                                            const amount = calculateAmount(user.carts)
+                                                            creditCardCheckout(amount, card.id)
+                                                        }} >Pay with Ready Card!</a>
+                                                    </div>
+                                                </form>
+                                               ))
+                                           }
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </main>
+                {/* <Footer />   */}
             </div>  
-        </>
     )
 }
 

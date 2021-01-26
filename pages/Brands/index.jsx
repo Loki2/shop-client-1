@@ -1,7 +1,8 @@
 import React from 'react';
 import Brands from '../../components/Brands';
-import Header from '../../components/Header';
-import Sidebar from '../../components/Sidebar';
+import Header from '../../components/Partials/Header';
+import Sidebar from '../../components/Partials/Sidebar';
+
 
 const UserBrandPage = () => {
     return (

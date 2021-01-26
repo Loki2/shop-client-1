@@ -1,20 +1,29 @@
-// import React from 'react'
-// import StripeCheckout from 'react-stripe-checkout';
+import * as React from 'react'
+import StripeCheckout from 'react-stripe-checkout';
  
-// export default class TakeMoney extends React.Component {
-
- 
-//   // ...
- 
-//   render() {
-//     return (
-//       // ...
-//       <StripeCheckout
-//         token={(token) => {
-//             console.log('token', token)
-//         }}
-//         stripeKey="pk_test_51I49DEFIPEY2MboGb6l7dTmuN4XurhKPOlxuQApPyGkk7qBclzNmJTtyulIiszTVIDKQBS6YIBQqhlbbfmVUDSpS00RDaMaEmG"
-//       />
-//     )
+export default class Payment extends React.PureComponent {
+//   onToken = (token) => {
+//     fetch('/save-stripe-token', {
+//       method: 'POST',
+//       body: JSON.stringify(token),
+//     }).then(response => {
+//       response.json().then(data => {
+//         alert(`We are in business, ${data.email}`);
+//       });
+//     });
 //   }
-// }
+ 
+  // ...
+ 
+  render() {
+    return (
+      // ...
+      <StripeCheckout
+        token={token => {
+            console.log(token)
+        }}
+        stripeKey={process.env.STRIPE_PUBLIC_KEY}
+      />
+    )
+  }
+}

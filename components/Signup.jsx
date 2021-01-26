@@ -76,7 +76,7 @@ const Signup = () => {
                 />
                 <div className="message">
                     {success && <p style={{ color: 'teal' }}>You Successfully Signed Up, Please{" "}
-                        <Link href="/signin">
+                        <Link href="/Signin">
                             <a><span>Login here</span></a>
                         </Link>
                     </p>}
@@ -86,7 +86,7 @@ const Signup = () => {
                 <button className="btn-submit"
                     type='submit'
                     disabled={loading}>Submit Now!</button>
-                <Link href="/signin">
+                <Link href="/Signin">
                     <a>Already have an account? {"  "} <span>Login here</span></a>
                 </Link>
             </form>

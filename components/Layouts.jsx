@@ -1,13 +1,11 @@
 import React,  { useState, useContext, useEffect } from 'react';
 import Head from 'next/head';
-import Navigation from './Navigation';
-import { AuthContext } from '../contexts/AuthProvider';
-import Footer from './Footer';
-import Sidebar from './Sidebar';
+// import Navigation from './Navigation';
+// import { AuthContext } from '../contexts/AuthProvider';
 
 
 function Layouts({ children }) {
-    const { user, setAuthUser } = useContext(AuthContext);
+    // const { user, setAuthUser } = useContext(AuthContext);
 
     return (
         <>
@@ -15,12 +13,8 @@ function Layouts({ children }) {
                 <title>Ozone Shoppy</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-                <Navigation />
+                {/* <Navigation /> */}
                 {children}
-
-            {/* <div>
-                <Footer />
-            </div> */}
             </>
     )
 }

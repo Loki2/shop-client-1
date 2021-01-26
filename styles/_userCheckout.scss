@@ -31,6 +31,15 @@ main {
       
 }
 
+.info-state label {
+    color: var(--grey1);
+    font-size: 1.3rem;
+}
+
+.select-state  label {
+    color: var(--grey1);
+    font-size: 1.3rem;
+}
 .summary-checkout {
       background: #fff;
       border-radius: 7px;
@@ -45,21 +54,22 @@ main {
       background: #efefef;
       text-align: left;
 }
+ 
 
-th {
-      font-size: 1rem;
+.summary-checkout th {
+      font-size: 1.5rem;
       padding: 1rem 1rem;
       color: var(--color-dark);
 }
 
-td {
-      font-size: 0.9rem;
+.summary-checkout td {
+      font-size: 1.3rem;
       //   width: 100%;
 }
 
 .summary-checkout tfoot {
-    background: #f7c3c3;
     text-align: right;
+    color: $main-color;
 }
 
 .bill-title {
@@ -126,6 +136,7 @@ label {
     margin-right: .5rem;
 }
 
+
 .summary-checkout-single .select-state {
       display: flex;
       justify-content: space-between;
@@ -137,6 +148,7 @@ label {
             margin: 5px;
             padding: 5px;
       }
+      
 }
 
 .summary-checkout-single .submit-state {
@@ -226,3 +238,38 @@ label {
     padding: 0.25rem;
     margin-top: 1.3rem;
 }
+.credit__header {
+    margin-bottom: 1.9rem;
+}
+
+.credit__header h2 {
+        font-size: 1.6rem;
+        margin-left: 0.5rem;
+        color: var(--primary);
+}
+
+.credit-info label {
+    font-size: 1.3rem;
+      margin-left: 0.5rem;
+      color: var(--grey1);
+}
+
+.credit-info a {
+    width: 100%;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
+
+.credit-info  p {
+        font-size: 1.3rem;
+        margin-left: 0.5rem;
+        color: var(--grey1);
+        margin-bottom: 9rem;
+}
+

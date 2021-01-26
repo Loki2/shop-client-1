@@ -1,7 +1,7 @@
 import React from 'react';
 import Categories from '../../components/Categories';
-import Header from '../../components/Header';
-import Sidebar from '../../components/Sidebar';
+import Header from '../../components/Partials/Header';
+import Sidebar from '../../components/Partials/Sidebar';
 
 const Category = () => {
     return (
