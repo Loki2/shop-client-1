@@ -7,7 +7,8 @@ import withApollo from 'next-with-apollo';
 import cookie from 'cookie'
 //Link Uri
 //const uri = process.env.BACKEND_URI
-const uri = 'http://localhost:5000/graphql'
+const uri = 'http://192.168.100.14:5002/graphql'
+
 //Create Http Linl
 const httpLink = createHttpLink({uri, fetch});
 

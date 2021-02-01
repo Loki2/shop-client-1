@@ -1,3 +1,5 @@
 {
-    "git.ignoreLimitWarning": true
+  "editor.fontFamily": "'Fira Code','Operator Mono','Noto Sans Lao'",
+  "editor.tabSize": 2,
+  "editor.fontSize": 14
 }

@@ -28,13 +28,13 @@ const Navigation = () => {
                         <div className="top">
                             <label htmlFor="" className="btn btn__close"><i className="ti-close" /></label>
                         </div>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/Products">Products</a></li>
+                        <li><a href="/">ຫນ້າຫລັກ</a></li>
+                        <li><a href="/Products">ສີນຄ້າ</a></li>
                         <li>
-                            <a href="#" className="desktop__items">Shops <span><i className="ti-angle-down" /></span></a>
+                            <a href="#" className="desktop__items">ຮ້ານຄ້າ<span><i className="ti-angle-down" /></span></a>
                             <input type="checkbox" name="showMega" id="showMega" />
                             <label htmlFor="showMega" className="mobile__items">
-                                <span>Shops<i className="ti-angle-down" /></span>
+                                <span>ຮ້ານທັງຫມົດ<i className="ti-angle-down" /></span>
                             </label>
                             <div className="mega__box">
                                 <div className="content">
@@ -87,7 +87,7 @@ const Navigation = () => {
                             </ul>
                         </li>
                         <li>
-                            <a href="#" className="desktop__items">Help <span><i className="ti-angle-down" /></span></a>
+                            <a href="#" className="desktop__items">ຊ່ວຍເຫລືອ <span><i className="ti-angle-down" /></span></a>
                             <input type="checkbox" name="showDropdown2" id="showDropdown2" />
                             <label htmlFor="showDropdown2" className="mobile__items">
                                 <span>Help<i className="ti-angle-down" /></span>
