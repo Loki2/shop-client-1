@@ -45,7 +45,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product1_izeg8n.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product1_dv47mm_xomn9y.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -73,7 +73,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product14_cnjfod_hq5dap.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -101,7 +101,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534027/product13_jeocrb.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product13_vekz3w_frn3lu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -129,7 +129,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product11_smupbk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product11_kxqazq_asnubu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -157,7 +157,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product3_uz8mxd_z01epu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -185,7 +185,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product4_rnvclc.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product6_gufj32_dqrl3o.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -213,7 +213,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534024/product6_ridrxd.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product2_r8ts6g_lpob0m.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -241,7 +241,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product7_jfkluc.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product5_ndgvhn_nmn9f7.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -269,7 +269,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product10_nv4hj3.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product10_oplnhc_sc5lpp.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -297,7 +297,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product4_qixtdj_st9kdr.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -325,7 +325,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product12_aznyjk_bgwzaa.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -353,7 +353,36 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534024/product2_rnywnk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product8_d9zy51_egsqbm.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+        
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product1_dv47mm_xomn9y.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -381,7 +410,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product10_nv4hj3.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product14_cnjfod_hq5dap.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -409,36 +438,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product12_aznyjk.jpg"
-                alt=""
-              />
-              <div className="addCart">
-                <i className="ti-shopping-cart" />
-              </div>
-              <ul className="side__icons">
-                <span>
-                  <i className="ti-search" />
-                </span>
-                <span>
-                  <i className="ti-heart" />
-                </span>
-                <span>
-                  <i className="ti-layout-slider" />
-                </span>
-              </ul>
-            </div>
-            <div className="bottom">
-              <a href="#">Bambi Print Mini Backpack</a>
-              <div className="price">
-                <span>$150</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="product">
-            <div className="img__container">
-              <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product1_izeg8n.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product13_vekz3w_frn3lu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -466,7 +466,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product11_kxqazq_asnubu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -494,7 +494,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534027/product13_jeocrb.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product3_uz8mxd_z01epu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -522,7 +522,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product11_smupbk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product6_gufj32_dqrl3o.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -550,7 +550,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product2_r8ts6g_lpob0m.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -578,7 +578,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product4_rnvclc.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product5_ndgvhn_nmn9f7.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -606,7 +606,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534024/product6_ridrxd.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product10_oplnhc_sc5lpp.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -634,7 +634,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product7_jfkluc.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product4_qixtdj_st9kdr.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -662,7 +662,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product10_nv4hj3.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product12_aznyjk_bgwzaa.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -690,7 +690,36 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product8_d9zy51_egsqbm.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+        
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product1_dv47mm_xomn9y.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -718,7 +747,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product14_cnjfod_hq5dap.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -746,7 +775,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534024/product2_rnywnk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product13_vekz3w_frn3lu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -774,7 +803,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product10_nv4hj3.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product11_kxqazq_asnubu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -802,7 +831,7 @@ const AllProducts = () => {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product12_aznyjk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product3_uz8mxd_z01epu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -827,12 +856,210 @@ const AllProducts = () => {
               </div>
             </div>
           </div>
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product6_gufj32_dqrl3o.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product2_r8ts6g_lpob0m.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product5_ndgvhn_nmn9f7.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product10_oplnhc_sc5lpp.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product4_qixtdj_st9kdr.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product12_aznyjk_bgwzaa.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div className="product">
+            <div className="img__container">
+              <img
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product8_d9zy51_egsqbm.jpg"
+                alt=""
+              />
+              <div className="addCart">
+                <i className="ti-shopping-cart" />
+              </div>
+              <ul className="side__icons">
+                <span>
+                  <i className="ti-search" />
+                </span>
+                <span>
+                  <i className="ti-heart" />
+                </span>
+                <span>
+                  <i className="ti-layout-slider" />
+                </span>
+              </ul>
+            </div>
+            <div className="bottom">
+              <a href="#">Bambi Print Mini Backpack</a>
+              <div className="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+        
         </div>
         {/* <!-- PAGINATION --> */}
         <div>
           <ul className="pagination">
             <span>1</span>
             <span>2</span>
+            <span>3</span>
             <span className="icon">››</span>
             <span className="last">Last »</span>
           </ul>

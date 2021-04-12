@@ -1,179 +1,150 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../../contexts/AuthProvider';
-import Footer from '../../components/Partials/Footer';
-import Navigation from '../../components/Partials/Navigation';
-import CartItems from '../../components/Cart/CartItems';
-import CheckoutWithCreditCard from '../../components/Checkout/CheckoutWithCreditCard';
+import React, { useState, useContext, Component } from "react";
+import CartList from "../../components/Cart/CartList";
+import Footer from "../../components/Partials/Footer";
+import Navigation from "../../components/Partials/Navigation";
+import Backdrop from "../../components/Backdrop";
+import Modal from "../../components/Modal";
+import { AuthContext } from "../../contexts/AuthProvider";
+import Router from "next/router";
 
-const Carts = () => {
-    const { user, loading, error } = useContext(AuthContext)
-    // console.log("user data:", user)
-    if (error) return (
-        <>
-            <main>
-                <div className="cart__content">
-                    <p className="error__card">Ooops....! Something went wrong, Plz Login try again later</p>
-                </div>
-            </main>
-        </>
-    )
-    if (loading) return <p>Empty Cart Loading...</p>
+class Carts extends Component {
+  state = {
+    create: false,
+  };
+  CreateEventHandler = () => {
+    this.setState({ creating: true });
+  };
+
+  modalConfirmHandler = () => {
+    this.setState({ creating: false });
+  };
+
+  modalCancelHandler = () => {
+    this.setState({ creating: false });
+  };
+
+  /*
+   **  Create Payment bank Service
+   */
+  _renderCreateCheckout = () => () => {
+    const { user, loading, error } = useContext(AuthContext);
+
+    console.log("User Payment data:", user);
+    if (error) {
+      return (
+        <p className="error__card">
+          Ooops....! Something went wrong, Plz Login try again later
+        </p>
+      );
+    }
+
+    if (loading) return <p>Empty Cart Loading...</p>;
 
     return (
-        <>
-            <Navigation />
+      <>
+        <div className="checkout__card">
+          <div className="summary-checkout-single">
+            <form action="" method="post">
+              <div className="info-state">
+                <label htmlFor="fullname">Full Name:</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Enter Fullname"
+                  required
+                />
+                <label htmlFor="address">Address:</label>
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Enter Address"
+                  required
+                />
+                <label htmlFor="city">City:</label>
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="NY, New York"
+                  required
+                />
+                <label htmlFor="state">Province:</label>
+                <input
+                  type="text"
+                  name="province"
+                  placeholder="Enter Province"
+                  required
+                />
+                <label htmlFor="contact">Contact No:</label>
+                <input
+                  type="text"
+                  name="contact"
+                  placeholder="Contact No."
+                  required
+                />
+              </div>
+              <div className="select-state">
+                <label htmlFor="state">Coutry:</label>
+                <input
+                  type="text"
+                  name="state"
+                  placeholder="Enter Country"
+                  required
+                />
+                <label htmlFor="zip">Zip Code:</label>
+                <input type="text" name="zip" placeholder="Zip Code" />
+              </div>
+              <div className="submit-state">
+                <button
+                  className="btn__cancel"
+                  onClick={() => Router.push("/Carts")}
+                  type=""
+                >
+                  Back Cart
+                </button>
+                <button className="btn__submit" type="submit">
+                  ຈັດເກັບ
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </>
+    );
+  };
+  render() {
+    const CheckoutAddress = this._renderCreateCheckout();
+    return (
+      <>
+        <Navigation />
+        <div className="container cart">
+          <CartList />
+          {this.state.creating && <Backdrop />}
+          {this.state.creating && (
+            <Modal
+              title="Checkout Service"
+              canCancel
+              canConfirm
+              onCancel={this.modalCancelHandler}
+              onConfirm={this.modalConfirmHandler}
+            >
+              <CheckoutAddress />
+            </Modal>
+          )}
 
-            <div className="container cart">
-                <table>
-                    <tbody>
-                        <tr>
-                            <th className="t__head">Product</th>
-                            <th className="t__head">Quantity</th>
-                            <th className="t__head">Subtotal</th>
-                        </tr>
-                        {
-                            user.carts.length > 0 &&
-                            user.carts.map(cart =>
-                                <CartItems key={cart.id} cart={cart} />
-                            )
-                        }
-                        <tr>
-                            <td>
-                                <div className="cart-info">
-                                    <img src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product1_izeg8n.jpg" alt="" />
-                                    <div>
-                                        <p>Bambi Print Mini Backpack</p>
-                                        <span>Price: $500.00</span>
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <a href="#">remove</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><input type="number" value="1" min="1" /></td>
-                            <td>$50.00</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div className="cart-info">
-                                    <img src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg" alt="" />
-                                    <div>
-                                        <p>Bambi Print Mini Backpack</p>
-                                        <span>Price: $900.00</span>
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <a href="#">remove</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><input type="number" value="1" min="1" /></td>
-                            <td>$90.00</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div className="cart-info">
-                                    <img src="https://res.cloudinary.com/swizce/image/upload/v1610534027/product13_jeocrb.jpg" alt="" />
-                                    <div>
-                                        <p>Bambi Print Mini Backpack</p>
-                                        <span>Price: $700.00</span>
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <a href="#">remove</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><input type="number" value="1" min="1" /></td>
-                            <td>$60.00</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div className="cart-info">
-                                    <img src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product11_smupbk.jpg" alt="" />
-                                    <div>
-                                        <p>Bambi Print Mini Backpack</p>
-                                        <span>Price: $600.00</span>
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <a href="#">remove</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><input type="number" value="1" min="1" /></td>
-                            <td>$60.00</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div className="cart-info">
-                                    <img src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg" alt="" />
-                                    <div>
-                                        <p>Bambi Print Mini Backpack</p>
-                                        <span>Price: $600.00</span>
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <a href="#">remove</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td><input type="number" value="1" min="1" /></td>
-                            <td>$60.00</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div className="total__price">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Subtotal:</td>
-                                <td>$
-                                        {
-                                        user.carts.length > 0 &&
-                                        user.carts.reduce(
-                                            (sum, cart) => sum + cart.qualtity * cart.product.price, 0
-                                        )
-                                    }
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Tax 10%:</td>
-                                <td>$
-                                    {
-                                        user.carts.length > 0 &&
-                                        user.carts.reduce((sum, cart) => sum + cart.qualtity * cart.product.price * 10 / 100, 0)
-                                    }
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Shipping:</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>Total:</td>
-                                <td>$
-                                    {
-                                        user.carts.length > 0 &&
-                                        user.carts.reduce((sum, cart) => (sum + cart.qualtity * cart.product.price) + sum * 10 / 100, 0)
-                                    }
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <a href="/Checkout" className="checkout btn" disabled={user.carts.length === 0}>Proceed To Checkout</a>
-                    <CheckoutWithCreditCard carts={user.carts}/>
-                </div>
-            </div>
-            <Footer />
-        </>
-    )
+          <div className="add_checkoutAddress">
+            <button onClick={this.CreateEventHandler}>ໃສ່ທີຢູ່ຮັບເຄື່ອງ</button>
+          </div>
+          <div className="checkout_order">
+            <button onClick={() => Router.push("/Checkout")}>
+              Checkout Order
+            </button>
+          </div>
+        </div>
+
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default Carts;

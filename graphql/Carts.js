@@ -11,7 +11,7 @@ export const ADD_TO_CART = gql`
         imageUrl
         price
       }
-      qualtity
+      quantity
     }
   }
 `;
@@ -30,7 +30,7 @@ export const MY_CARTS = gql`
           imageUrl
           price
         }
-        qualtity
+        quantity
       }
     }
   }
@@ -54,7 +54,24 @@ export const CREATE_ORDER = gql`
           name
           price
         }
-        qualtity
+        quantity
+      }
+    }
+  }
+`;
+
+export const CUSTOM_ORDER = gql`
+mutation CUSTOM_ORDER($amount: Float!, $checkoutId: String!){
+    custOrder(amount: $amount, checkoutId: $checkoutId ){
+      id
+      items{
+        id
+        product{
+          name
+          description
+          price
+        }
+        quantity
       }
     }
   }

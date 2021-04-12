@@ -7,6 +7,7 @@ export const MY_BRANDS = gql`
       brands {
         id
         name
+        desc
         logo
       }
     }
@@ -14,10 +15,11 @@ export const MY_BRANDS = gql`
 `;
 
 export const CREATE_BRAND = gql`
-  mutation CREATE_BRAND($name: String!, $logo: String!) {
-    createUserCategory(name: $name, logo: $logo) {
+  mutation CREATE_BRAND($name: String!, $desc: String!, $logo: String!) {
+    createUserBrand(name: $name, desc: $desc, logo: $logo) {
       id
       name
+      desc
       logo
     }
   }
@@ -28,6 +30,7 @@ export const QUERY_BRANDS = gql`
     brands {
       id
       name
+      desc
       logo
       products {
         id

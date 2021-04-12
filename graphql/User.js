@@ -25,7 +25,7 @@ export const QUERY_USER = gql`
           imageUrl
           price
         }
-        qualtity
+        quantity
       }
       orders {
         id
@@ -36,7 +36,7 @@ export const QUERY_USER = gql`
             price
             imageUrl
           }
-          qualtity
+          quantity
         }
       }
       cards {
@@ -85,7 +85,7 @@ export const LOG_IN = gql`
             price
             imageUrl
           }
-          qualtity
+          quantity
         }
         orders {
           id
@@ -96,7 +96,7 @@ export const LOG_IN = gql`
               price
               imageUrl
             }
-            qualtity
+            quantity
           }
         }
         cards {

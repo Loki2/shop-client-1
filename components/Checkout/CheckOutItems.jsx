@@ -5,9 +5,9 @@ const CheckOutItems = ({item}) => {
         <>
             <tr>
                 <td>{item.product.name}</td>
-                <td>${item.product.price}</td>
-                <td>{item.qualtity}</td>
-                <td>${item.product.price * item.qualtity}</td>
+                <td>{item.product.price}{" "} k</td>
+                <td>{item.quantity}</td>
+                <td>{item.product.price * item.quantity}{" "} k</td>
             </tr>
         </>
     )

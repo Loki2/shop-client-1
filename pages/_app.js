@@ -8,8 +8,9 @@ import cookie from "cookie";
 import { QUERY_USER } from "../graphql/User";
 import "../styles/global.scss";
 import "@quasar/extras/ionicons-v4/ionicons-v4.css";
-
-//const Backend_uri = process.env.BACKEND_URI
+// import dotenv from "dotenv";
+// dotenv.config();
+const Backend_uri = process.env.BACKEND_URI
 
 // function MyApp({ Component, pageProps, apollo }) {
 //   return (
@@ -67,8 +68,9 @@ App.getInitialProps = async ({ ctx, router }) => {
     //Add More Protected route here
     return null;
   }
-  //"http://localhost:5000/graphql"
-  const response = await fetch("http://192.168.100.14:5002/graphql", {
+  //"http://localhost:5002/graphql"
+  //"http://192.168.100.14:5002/graphql"
+  const response = await fetch(`${Backend_uri}`, {
     method: "post",
     headers: {
       "Content-type": "application/json",

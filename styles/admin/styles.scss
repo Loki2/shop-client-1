@@ -260,8 +260,8 @@ main {
 
 th,
 td {
-  font-size: 1.7rem;
-  padding: 1rem 1rem;
+  font-size: 1.1rem;
+  padding: .5rem .5rem;
   color: var(--color-dark);
 }
 
@@ -577,8 +577,8 @@ tbody tr:nth-child(even) {
 }
 
 .cover-image  div {
-  height: 285px;
-  width: 100%px;
+  height: 225px;
+  width: 1620px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../../assets/images/2.png');
@@ -587,26 +587,27 @@ tbody tr:nth-child(even) {
 }
 
 .cover-image  img {
-  height: 285px;
-  width: 1494px;
+  height: 225px;
+  width: 1620px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5px;
-  border-style: 1px solid;
+  // border-style: 1px solid;
 }
 
 .profile-image {
   margin-left: 70rem;
+  top: 65px;
 }
 
 .profile-image div {
-  height: 175px;
-  width: 175px;
+  height: 138px;
+  width: 138px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../../assets/images/1.jpg');
   border-radius: 50%;
-  border-style: 1px solid;
+  // border-style: 1px solid;
 }
 
 .profile-image img {
@@ -615,5 +616,5 @@ tbody tr:nth-child(even) {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
-  border-style: 1px solid;
+  // border-style: 1px solid;
 }

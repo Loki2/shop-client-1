@@ -1,201 +1,213 @@
 @import "./variables";
 
 .checkout-page {
-      background: $background1;
-      align-items: center;
-      padding: 0rem 5.5rem;
+  background: $background1;
+  align-items: center;
+  padding: 0rem 5.5rem;
 }
 
 .checkout-content {
-      position: relative;
-      transition: margin-left 500ms;
-      align-items: center;
+  position: relative;
+  transition: margin-left 500ms;
+  align-items: center;
 }
 
 main {
-      // margin-top: 60px;
-      background: $background1;
-      min-height: 95vh;
-      padding: 1rem 3rem;
+  // margin-top: 60px;
+  background: $background1;
+  min-height: 95vh;
+  padding: 1rem 3rem;
 }
 
 .dash-title {
-      color: $main-color;
-      margin-left: 1rem;
+  color: $main-color;
+  margin-left: 1rem;
 }
 
 .checkout-grid {
-      display: grid;
-      grid-template-columns: 30% 70%;
-      column-gap: 2rem;
-      
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 2rem;
 }
 
 .info-state label {
-    color: var(--grey1);
-    font-size: 1.3rem;
+  color: var(--grey1);
+  font-size: 1.3rem;
 }
 
-.select-state  label {
-    color: var(--grey1);
-    font-size: 1.3rem;
+.select-state label {
+  color: var(--grey1);
+  font-size: 1.3rem;
 }
 .summary-checkout {
-      background: #fff;
-      border-radius: 7px;
-      box-shadow: 1px 1px 1px  rgba(0,0,0,0.3);
+  background: #fff;
+  border-radius: 7px;
+  margin-top: 55px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .summary-checkout table {
-      width: 100%;
-      border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .summary-checkout thead {
-      background: #efefef;
-      text-align: left;
+  background: #efefef;
+  text-align: left;
 }
- 
 
 .summary-checkout th {
-      font-size: 1.5rem;
-      padding: 1rem 1rem;
-      color: var(--color-dark);
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  color: var(--color-dark);
 }
 
 .summary-checkout td {
-      font-size: 1.3rem;
-      //   width: 100%;
+  font-size: 1.3rem;
+  //   width: 100%;
 }
 
 .summary-checkout tfoot {
-    text-align: right;
-    color: $main-color;
+  text-align: right;
+  color: $main-color;
+}
+
+.checkout-card {
+  margin-top: 55px;
 }
 
 .bill-title {
-      color: $main-color;
-      margin-left: 1rem;
+  color: $main-color;
+  margin-left: 1rem;
 }
 
 .checkout-header-cards {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 2rem;
-      margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .checkout-header-card-single {
-      background: #fff;
-      border-radius: 7px;
-      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 
 //***********************************************
 
 .checkout-info-cards {
-      display: grid;
-      grid-template-columns: 65% 33%;
-      column-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 65% 33%;
+  column-gap: 1.5rem;
 }
 
 .summary-checkout-single {
-      background: #fff;
-      border-radius: 7px;
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .summary-checkout-single h3 {
-      color: $main-color;
-      margin-left: 0.7rem;
+  color: $main-color;
+  margin-left: 0.7rem;
 }
 .summary-checkout-single form {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      width: 95%;
-      margin-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 95%;
+  margin-bottom: 1.3rem;
 
-      input {
-            width: 98%;
-            border: 0.5px solid teal;
-            margin: 5px;
-            padding: 5px;
-            border-radius: 5px;
-            margin-bottom: 0.5rem;
-      }
+  input {
+    width: 98%;
+    border: 0.5px solid teal;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
 }
 
 label {
-      font-size: 0.8rem;
-      margin-left: 0.5rem;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
 }
 
-.select-state { 
-    margin-top: 1rem;
-    margin-right: .5rem;
+.select-state {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
 }
-
 
 .summary-checkout-single .select-state {
-      display: flex;
-      justify-content: space-between;
-      input {
-            width: 38%;
-            border: 0.5px solid teal;
-            border-radius: 5px;
-            margin-bottom: 1rem;
-            margin: 5px;
-            padding: 5px;
-      }
-      
+  display: flex;
+  justify-content: space-between;
+  input {
+    width: 38%;
+    border: 0.5px solid teal;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin: 5px;
+    padding: 5px;
+  }
 }
 
 .summary-checkout-single .submit-state {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
 }
 
 .submit-state {
-    margin-right: .3rem;
+  margin-right: 0.3rem;
 }
 
 .submit-state .btn__cancel {
-      width: 15%;
-      background: $text-grey;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-size: 14px;
-      border-radius: 5px;
-      margin: 0.25rem;
-      padding: 0.25rem;
+  width: 15%;
+  background: $text-grey;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0.25rem;
+  padding: 0.25rem;
 }
 
-.submit-state  .btn__submit {
-    width: 15%;
-    background: teal;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 5px;
-    margin: 0.25rem;
-    padding: 0.25rem;
+.submit-state .btn__submit {
+  width: 15%;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.btn__submit_order {
+  width: 12.5%;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0.15rem;
+  padding: 0.95rem;
 }
 
 .credit-state {
-      display: flex;
-      justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.card_logo  {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 1.5rem;
-    margin-right: .5rem;
-    margin-bottom: 1.7rem;
+.card_logo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1.7rem;
 }
 
 // .card_logo div {
@@ -210,66 +222,64 @@ label {
 // }
 
 .credit-info {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-
 .btn-payment__omise {
-    width: 100%;
-    background:blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 5px;
-    margin: 0.25rem;
-    padding: 0.25rem;
+  width: 100%;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0.25rem;
+  padding: 0.25rem;
 }
 
 .btn_payment__stripe {
-    width: 100%;
-    background:blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 5px;
-    margin: 0.25rem;
-    padding: 0.25rem;
-    margin-top: 1.3rem;
+  width: 100%;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  margin-top: 1.3rem;
 }
 .credit__header {
-    margin-bottom: 1.9rem;
+  margin-bottom: 1.9rem;
 }
 
 .credit__header h2 {
-        font-size: 1.6rem;
-        margin-left: 0.5rem;
-        color: var(--primary);
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+  color: var(--primary);
 }
 
 .credit-info label {
-    font-size: 1.3rem;
-      margin-left: 0.5rem;
-      color: var(--grey1);
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+  color: var(--grey1);
 }
 
 .credit-info a {
-    width: 100%;
-    background: teal;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 5px;
-    margin: 0.25rem;
-    padding: 0.25rem;
+  width: 100%;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0.25rem;
+  padding: 0.25rem;
 }
 
-.credit-info  p {
-        font-size: 1.3rem;
-        margin-left: 0.5rem;
-        color: var(--grey1);
-        margin-bottom: 9rem;
+.credit-info p {
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+  color: var(--grey1);
+  margin-bottom: 9rem;
 }
-

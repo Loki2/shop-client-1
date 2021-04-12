@@ -6,10 +6,10 @@ import fetch from 'isomorphic-unfetch';
 import withApollo from 'next-with-apollo';
 import cookie from 'cookie'
 //Link Uri
-//const uri = process.env.BACKEND_URI
+//const uri = process.env.BACKEND_URI 
 const uri = 'http://192.168.100.14:5002/graphql'
 
-//Create Http Linl
+//Create Http Link
 const httpLink = createHttpLink({uri, fetch});
 
 let cookies
@@ -43,7 +43,7 @@ export default withApollo(({ initialState }) => {
     link: authLink.concat(httpLink),
     cache: new InMemoryCache().restore(initialState || {})
   });
-},
+  },
 //  {
 //     render: ({ Page, props }) => {
 //       return (

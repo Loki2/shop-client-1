@@ -33,7 +33,7 @@ const createProduct = () => {
         ...productData,
         [e.target.name]: e.target.value,
       });
-
+    //Select image from Folder
     const selectFile = (e) => {
       const files = e.target.files;
       setFile(files[0]);
@@ -57,11 +57,12 @@ const createProduct = () => {
       return result.secure_url;
     };
 
+    // Create Handle Submit
     const handleSubmit = async (e) => {
       try {
         e.preventDefault();
         const url = await uploadFile();
-        console.log('image Url:', url)
+        // console.log('image Url:', url)
         if (url) {
           const result = await createProduct({
             variables: {
@@ -71,7 +72,7 @@ const createProduct = () => {
               imageUrl: url,
             },
           });
-          console.log('Product Data:', result)
+          // console.log('Product Data:', result)
           return result;
         }
         Router.push("/admin/products");
@@ -144,7 +145,7 @@ const createProduct = () => {
                         onChange={handleChange}
                       />
                     </div>
-                    <div className="form-control">
+                    {/* <div className="form-control">
                       <label htmlFor="contact"> Select Categories: </label>
                       <input
                         type="text"
@@ -161,7 +162,7 @@ const createProduct = () => {
                         placeholder="__Select Brand__"
                         disabled
                       />
-                    </div>
+                    </div> */}
                     <div className="form-control">
                       <label htmlFor="contact"> Product Image: </label>
                       <input

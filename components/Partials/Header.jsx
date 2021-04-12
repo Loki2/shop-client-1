@@ -31,12 +31,10 @@ const Header = () => {
         <div className="social-icons">
           <span className="ti-home" onClick={() => Router.push("/")}></span>
           <span className="ti-bell" />
-          <span className="ti-comment" />
           <span
             className="ti-shopping-cart"
-            onClick={() => Router.push("/Cart")}
+            onClick={() => Router.push("/Carts")}
           >
-            <span>3</span>
           </span>
           <span className="ti-arrow-circle-right" onClick={() => signout()} />
           <div></div>

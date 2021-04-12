@@ -59,10 +59,10 @@ const CheckoutWithCreditCard = (amount, creditCardCheckout) => {
                     id="credit-card"
                     className="btn-payment__omise"
                     type="button"
-                     disabled={!amount}
-                    onClick={handleClick}
+                    disabled={!amount}
+                    // onClick={handleClick}
                 >
-                    Pay Now! With New Credit Card
+                    Pay Now! - Developing mode
                 </button>
             </form>
         </div>

@@ -9,7 +9,7 @@ function Layouts({ children }) {
   return (
     <>
       <Head>
-        <title>Ozone Shoppy</title>
+        <title>Ozone.com</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Navigation /> */}

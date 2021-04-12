@@ -4,7 +4,8 @@
 .cart {
     max-width: 85rem;
     margin: 10rem auto;
-  }
+    margin-top: 13.5rem;
+}
   
   table {
     width: 100%;
@@ -105,3 +106,13 @@
     }
   }
   
+//CheckOut Service style
+// .checkout__card {
+//   background-color: burlywood;
+// }
+
+.checkout__card p {
+  font-size: 18px;
+  color: teal;
+}
+

@@ -8,6 +8,7 @@ export const MY_CATEGORIES = gql`
       categories {
         id
         name
+        desc
         imageUrl
       }
     }
@@ -15,10 +16,11 @@ export const MY_CATEGORIES = gql`
 `;
 
 export const CREATE_CATEGORY = gql`
-  mutation CREATE_CATEGORY($name: String!, $imageUrl: String!) {
-    createUserCategory(name: $name, imageUrl: $imageUrl) {
+  mutation CREATE_CATEGORY($name: String!, $desc: String!, $imageUrl: String!) {
+    createUserCategory(name: $name, desc: $desc, imageUrl: $imageUrl) {
       id
       name
+      desc
       imageUrl
     }
   }
@@ -29,6 +31,7 @@ export const QUERY_CATEGORIES = gql`
     categories {
       id
       name
+      desc
       imageUrl
       products {
         id

@@ -1,8 +1,3 @@
-// @import "../variables";
-// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;&display=swap");
-// @import url("../assets/themify-icons/css/themify-icons.css");
-/* Variable */
-// @import './variables.scss';
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;&display=swap");
 @import url("../assets/themify-icons/css/themify-icons.css");
 /* Variable */
@@ -31,7 +26,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   background-color: var(--white);
   color: var(--white);
   font-weight: 400;
@@ -84,8 +79,9 @@ li {
   width: 100%;
   z-index: 999;
   background-color: var(--primary);
-  height: 6.5rem;
-  line-height: 6.5rem;
+  height: 8.5rem;
+  line-height: 4.5rem;
+  display: inline-block;
 }
 
 .nav.nav-fix {
@@ -101,12 +97,8 @@ li {
   position: relative;
 }
 
-.wrapper .logo a {
-  color: var(--white);
-  font-size: 2.7rem;
-  font-weight: 600;
-  padding: 0.5rem;
-  /* border: 1px solid var(--black); */
+.wrapper .logo img {
+  margin: 0px 0px -26px 22px;
 }
 
 .wrapper .nav__list {
@@ -140,7 +132,7 @@ li {
 .icons .ti-shopping-cart {
   color: var(--white);
 }
-.nav__list .icons .count {
+.nav__list .icons .count .search__box {
   justify-content: center;
   position: absolute;
   top: 0;
@@ -159,7 +151,7 @@ li {
 .nav__list .drop-menu3 {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   width: 20rem;
-  top: 8.5rem;
+  top: 9.9rem;
   line-height: 4.5rem;
   position: absolute;
   background-color: var(--white);
@@ -175,7 +167,7 @@ li {
 .nav__list li:hover .mega__box {
   opacity: 1;
   visibility: visible;
-  top: 6.5rem;
+  top: 9.9rem;
 }
 
 .nav__list .drop-menu1 li a,
@@ -200,8 +192,8 @@ li {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 8.5rem;
-  left: 0;
-  width: 100%;
+  left: 9.5rem;
+  width: 89%;
   padding: 0 3rem;
   background-color: var(--white);
   opacity: 0;
@@ -210,7 +202,7 @@ li {
 }
 
 .mega__box .content {
-  padding: 2.5rem 4rem;
+  padding: 2.4rem 2.5rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -294,7 +286,7 @@ li {
 
   .nav__list a {
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 0 2rem;
     color: var(--black);
   }
@@ -305,7 +297,7 @@ li {
     position: static;
     opacity: 1;
     visibility: visible;
-    top: 6.5rem;
+    top: 8.5rem;
     padding-left: 2rem;
     width: 100%;
     max-height: 0;
@@ -413,6 +405,38 @@ li {
     padding-left: 2.8rem;
   }
 }
+
+.search__box {
+  // height: calc(85vh - 6.5rem);
+  padding: 0;
+  background-color: var(--primary);
+  // margin-top: 15px;
+}
+
+.search__box select {
+  margin-left: 14rem;
+  width: 21%;
+  font-size: 2.3rem;
+  color: var(--primary);
+}
+
+.search__box input {
+  width: 63%;
+  font-size: 2.3rem;
+  color: var(--primary);
+  margin-left: 1.3rem;
+  margin-top: .7rem;
+  //border-radius: 3px;
+}
+
+.search__box span{
+  margin-left: -4.2rem;
+  font-size: 2rem;
+  background-color: var(--secondary);
+  padding: 5px 12px 4px 12px;
+  //border-radius: 0 3px 3px 0;
+}
+
 
 /* Hero Styling */
 .hero {
@@ -919,7 +943,7 @@ li {
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   color: var(--white);
 }
 
@@ -951,8 +975,8 @@ li {
 }
 
 .footer .payment-methods img {
-  height: 30%;
-  width: 30%;
+  height: 45%;
+  width: 55%;
   object-fit: cover;
 }
 

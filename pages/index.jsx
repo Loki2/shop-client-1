@@ -4,6 +4,8 @@ import { QUERY_PRODUCTS } from "../graphql/Products";
 import Navigation from "../components/Partials/Navigation";
 import Footer from "../components/Partials/Footer";
 
+
+
 function Home() {
   const { data, loading, error } = useQuery(QUERY_PRODUCTS); //, {pollInterval:3000} Add pollInterval to refresh page per second
   if (error) return <p>Ooops....! Something went wrong, Plz try again later</p>;
@@ -12,11 +14,16 @@ function Home() {
   return (
     <>
       <Navigation />
+      {/* <Navbar /> */}
+
+
+
       {/* Hero  */}
+      <hr/>
       <div className="hero">
         <div className="right">
           <img
-            src="https://cdni.iconscout.com/illustration/premium/thumb/girl-doing-online-shopping-on-mobile-2709762-2268087.png"
+            src="https://res.cloudinary.com/swizce/image/upload/v1617679102/promotion_tem/prom9_gptyy0.png"
             alt=""
           />
         </div>
@@ -27,6 +34,8 @@ function Home() {
           <a href="#">View Collection →</a>
         </div>
       </div>
+      
+      
       {/* Promotion Section */}
       <section className="section promotion">
         <div className="title">
@@ -36,7 +45,7 @@ function Home() {
         <div className="promotion__layout container">
           <div className="promotion__items">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610533566/promo1_tv1xoe.jpg"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617677413/assets_tem/promo1_ynjtti_joucoh.jpg"
               alt=""
             />
             <div className="promotion__content">
@@ -46,7 +55,7 @@ function Home() {
           </div>
           <div className="promotion__items">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610533566/promo2_aj97nv.jpg"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617677413/assets_tem/promo2_i72dtr_eozbbi.jpg"
               alt=""
             />
             <div className="promotion__content">
@@ -56,7 +65,7 @@ function Home() {
           </div>
           <div className="promotion__items">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610533564/promo3_ujnpmx.jpg"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617677413/assets_tem/promo3_dmrvt9_awyth5.jpg"
               alt=""
             />
             <div className="promotion__content">
@@ -66,7 +75,7 @@ function Home() {
           </div>
           <div className="promotion__items">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610534027/promo4_cvpcvv.jpg"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617677413/assets_tem/promo4_cvpcvv_xh5ci6.jpg"
               alt=""
             />
             <div className="promotion__content">
@@ -76,7 +85,7 @@ function Home() {
           </div>
           <div className="promotion__items">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610533565/promo5_tdvs55.jpg"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617677413/assets_tem/promo5_bguu3c_hr6qic.jpg"
               alt=""
             />
             <div className="promotion__content">
@@ -86,7 +95,7 @@ function Home() {
           </div>
           <div className="promotion__items">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610533565/promo6_b3yk68.jpg"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617677412/assets_tem/promo6_e3nqvo_bolv1y.jpg"
               alt=""
             />
             <div className="promotion__content">
@@ -96,17 +105,19 @@ function Home() {
           </div>
         </div>
       </section>
+      
+      
       {/* Product Section */}
       <section className="section products">
         <div className="title">
-          <h2>New Products</h2>
+          <h2>New Trending</h2>
           <span>Select from the premiumproduct and save plenty money</span>
         </div>
         <div className="product__layouts">
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product1_izeg8n.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product1_dv47mm_xomn9y.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -134,7 +145,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product14_cnjfod_hq5dap.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -162,7 +173,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534027/product13_jeocrb.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product13_vekz3w_frn3lu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -190,7 +201,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product11_smupbk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product11_kxqazq_asnubu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -218,7 +229,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product9_jryhmf_z7ryvu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -246,7 +257,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product4_rnvclc.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product3_uz8mxd_z01epu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -274,7 +285,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534024/product6_ridrxd.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product7_jfkluc_ffddxe.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -302,7 +313,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product7_jfkluc.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product2_r8ts6g_lpob0m.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -330,7 +341,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product10_nv4hj3.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product5_ndgvhn_nmn9f7.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -358,7 +369,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product10_oplnhc_sc5lpp.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -386,7 +397,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product10_oplnhc_sc5lpp.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -414,7 +425,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534024/product2_rnywnk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product4_qixtdj_st9kdr.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -442,7 +453,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product10_nv4hj3.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product12_aznyjk_bgwzaa.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -470,7 +481,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product12_aznyjk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product8_d9zy51_egsqbm.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -497,12 +508,14 @@ function Home() {
           </div>
         </div>
       </section>
+      
+
       {/* Advert Section */}
       <section className="section advert">
         <div className="advert__layouts">
           <div className="advert__items">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610533564/promo7_kijl3e.jpg"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617678184/promotion_tem/promo7_dajg7u_rz1n9a.jpg"
               alt=""
             />
             <div className="content left">
@@ -513,7 +526,7 @@ function Home() {
           </div>
           <div className="advert__items">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610533566/promo8_zpzzsr.jpg"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617678184/promotion_tem/promo8_tjebfg_zryspv.jpg"
               alt=""
             />
             <div className="content right">
@@ -524,8 +537,9 @@ function Home() {
           </div>
         </div>
       </section>
+      
+      
       {/* Trending Product */}
-
       <section className="section products">
         <div className="title">
           <h2>New Trending</h2>
@@ -535,7 +549,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product1_izeg8n.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product1_dv47mm_xomn9y.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -563,7 +577,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product14_cnjfod_hq5dap.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -591,7 +605,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534027/product13_jeocrb.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product13_vekz3w_frn3lu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -619,7 +633,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product11_smupbk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product11_kxqazq_asnubu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -647,7 +661,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product9_jryhmf_z7ryvu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -675,7 +689,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product4_rnvclc.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product3_uz8mxd_z01epu.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -703,7 +717,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534024/product6_ridrxd.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677878/products_tem/product7_jfkluc_ffddxe.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -731,7 +745,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610533570/product7_jfkluc.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product2_r8ts6g_lpob0m.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -759,7 +773,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product10_nv4hj3.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product5_ndgvhn_nmn9f7.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -787,7 +801,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product14_fxegrl.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product10_oplnhc_sc5lpp.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -815,7 +829,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534025/product5_hb1iim.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product10_oplnhc_sc5lpp.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -843,7 +857,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534024/product2_rnywnk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product4_qixtdj_st9kdr.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -871,7 +885,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product10_nv4hj3.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product12_aznyjk_bgwzaa.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -899,7 +913,7 @@ function Home() {
           <div className="product">
             <div className="img__container">
               <img
-                src="https://res.cloudinary.com/swizce/image/upload/v1610534026/product12_aznyjk.jpg"
+                src="https://res.cloudinary.com/swizce/image/upload/v1617677877/products_tem/product8_d9zy51_egsqbm.jpg"
                 alt=""
               />
               <div className="addCart">
@@ -926,6 +940,8 @@ function Home() {
           </div>
         </div>
       </section>
+      
+      
       {/* Branding Section */}
       <section className="section brands">
         <div className="title">
@@ -935,37 +951,37 @@ function Home() {
         <div className="brand__layouts container">
           <div className="brand_logo">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610534022/brand4_rrdzru.png"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617678090/brands_tem/brand7_m81bkt_ijtgxb.png"
               alt=""
             />
           </div>
           <div className="brand_logo">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610534022/brand2_vwi6l4.png"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617678089/brands_tem/brand5_w7sksl_moh9sb.png"
               alt=""
             />
           </div>
           <div className="brand_logo">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610534022/brand3_gp5dva.png"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617678090/brands_tem/brand2_vwi6l4_glon7c.png"
               alt=""
             />
           </div>
           <div className="brand_logo">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610534022/brand3_gp5dva.png"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617678090/brands_tem/brand3_gp5dva_ym7pwa.png"
               alt=""
             />
           </div>
           <div className="brand_logo">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610534022/brand1_ezhwzl.png"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617678090/brands_tem/brand6_qh1u62_ao2ncj.png"
               alt=""
             />
           </div>
           <div className="brand_logo">
             <img
-              src="https://res.cloudinary.com/swizce/image/upload/v1610534022/brand5_w7sksl.png"
+              src="https://res.cloudinary.com/swizce/image/upload/v1617678090/brands_tem/brand1_f64n35_rqw2bl.png"
               alt=""
             />
           </div>
@@ -975,6 +991,8 @@ function Home() {
             </div> */}
         </div>
       </section>
+     
+     
       {/* Sponsor Section */}
       <section className="section sponsor">
         <div className="title">
